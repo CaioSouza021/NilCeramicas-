@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "poppins", "sans-serif";
+}
+// Estilo do Link da Header
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 22vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 500px;
+
+  background-color: #f6f5f1;
+}
+
+// Caixa da Logo
+header .imgLogo {
+  width: 150px;
+  height: 130px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 25px;
+}
+
+// imagem logo
+header .imgLogo img {
+  height: 120px;
+  border-radius: 50%;
+}
+
+// personalização dos links
+header .LinkHeader {
+  width: 400px;
+  height: 50px;
+  padding-right: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .LinkHeader a {
+  font-size: 20px;
+  color: #3e5a4c;
+}
+
+// Modo Dark
+
+// Inicio da Main
+main .HeroHome {
+  position: relative; /* essencial pro overlay */
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(img/paisagem.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* camada escura / fumaçada */
+main .HeroHome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55); /* escurece */
+  backdrop-filter: blur(1px); /* efeito fumaça */
+  z-index: 1;
+}
+
+/* texto acima da fumaça */
+main .HeroHome .textHeroHome {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+
+  color: #ffffff;
+}
+
+main .HeroHome .textHeroHome h1 {
+  width: 100%;
+  height: 25%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 5.2rem;
+}
+
+main .HeroHome .textHeroHome p {
+  width: 75%;
+  height: 70%;
+
+  font-size: 2rem;
+  font-weight: 200;
+}
+// fim da Hero
+
+// parte 2 da main
+main .ApresentacaoPeca {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+
+  background-color: #fafaf8;
+}
+
+// texto da parte 2 main
+.ApresentacaoPeca .TextApresentacao {
+  width: 100%;
+  height: 25vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+}
+
+main .ContainerCardsHome {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
+// forma do card
+main .mainCardPeca {
+  border: solid 2px rgba(43, 23, 23, 0.185);
+  width: 260px;
+  height: 520px;
+
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+// box da imagem do card
+main .mainCardPeca figure {
+  width: 100%;
+  height: 60%;
+}
+// img do card
+main .mainCardPeca figure img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+// box da descrição
+main .mainCardPeca div {
+  height: 40%;
+  width: 100%;
+  padding-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+// titulo do produto
+main .mainCardPeca div p {
+  width: 95%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 0.9rem;
+
+  border-bottom: #3e5a4c3d 1px solid;
+}
+// preço do
+main .mainCardPeca div h3 {
+  width: 100%;
+
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1.5rem;
+}
