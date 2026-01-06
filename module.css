@@ -188,7 +188,60 @@ main .BoxTextHome span {
 }
 
 footer {
-  height: 10vh;
+  height: 20vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #3b2f2a;
+}
+
+footer .boxSocial {
+  width: 40%;
+  height: 45%;
+  text-align: center;
+}
+
+footer .boxSocial button {
+  height: 70px;
+  width: 70px;
+  margin: 0 10px;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #f6f5f1;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+footer .boxSocial button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .boxInfo {
+  width: 30%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(250, 250, 248, 0.3215686275);
+}
+
+footer .boxInfo a {
+  color: #f6f5f1;
+}
+
+footer .boxDireitos {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .boxDireitos p {
+  color: #f6f5f1;
 }/*# sourceMappingURL=module.css.map */
